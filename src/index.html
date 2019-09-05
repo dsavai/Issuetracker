@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/main.scss">
+    <title>Track stuff</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h3 class="display-5">Add New issue</h3>
+            <form data-new-list-form>
+                <div class="form-group">
+                    <label><strong>Description</strong></label>
+                    <input type="text" class="form-control" value="" aria-describedby="describeHelp" placeholder="Describe issue..." data-new-input-describe>
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                </div>
+                <div class="form-group">
+                    <label><strong>Severity</strong></label>
+                    <select class="form-control" id="select-severity">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                        <option value="priority">Priority</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label><strong>Assign To</strong></label>
+                    <input type="text" class="form-control" aria-describedby="assingtoHelp" placeholder="Enter responsible" data-input-new-assign>
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                </div>
+                <div class="form-group">
+                    <label for="issueNotes"><strong>Notes</strong></label>
+                    <textarea class="form-control" id="issueNotes" rows="3" placeholder="Enter issue notes" data-input-new-notes></textarea>
+                  </div>
+                <button type="submit" class="btn btn-primary" data-add-button>Add</button>
+                <button type="submit" class="btn btn-primary d-none" data-save-button>Save Issue</button>
+            </form>
+        </div>
+        <div class="row list-container" data-list-container>
+            <!-- <div class="card col-6">
+                <div class="card-body">
+                    <h2 class="card-title">Work Late</h2>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <span class="name">Dennis S</span>
+                        <span class="rate">Medium</span>
+                    </h6>
+                    <p>     
+                        <span class="badge badge-info">Open</span>     
+                        <span class="badge badge-success">Closed</span>
+                        <span class="badge badge-danger">Failed</span>
+                    </p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p>
+                        <button type="button" class="btn btn-danger">Close</button>
+                        <button type="button" class="btn btn-warning">Open</button>
+                    </p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

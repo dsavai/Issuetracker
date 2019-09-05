@@ -1,0 +1,18 @@
+{
+  "name": "tracker",
+  "version": "1.0.0",
+  "description": "Track tasks",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "dennis",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
